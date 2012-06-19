@@ -17,3 +17,9 @@
 $(call inherit-product, device/samsung/p5100/p51xx-common.mk)
 
 LOCAL_PATH := device/samsung/p5110
+
+# Packages
+PRODUCT_PACKAGES += \
+	libril \
+	rild \
+	reference-ril
