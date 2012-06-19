@@ -18,7 +18,10 @@
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := GT-P5110
+PRODUCT_RELEASE_NAME := p5110
+
+# Boot animation
+TARGET_BOOTANIMATION_NAME := horizontal-1024x768
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
