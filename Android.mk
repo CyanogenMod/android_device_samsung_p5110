@@ -24,7 +24,7 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),p5110)
 
-COMMON_P51XX_DIRS := audio liblights power
+COMMON_P51XX_DIRS := audio camerawrapper liblights power
 include $(foreach common_dirs,$(COMMON_P51XX_DIRS),device/samsung/p5100/$(common_dirs)/Android.mk)
 
 endif
