@@ -19,6 +19,9 @@
 
 TARGET_BOARD_INFO_FILE := device/samsung/p5110/board-info.txt
 
+# TVOut
+COMMON_GLOBAL_CFLAGS += -DSAMSUNG_MR0_TVOUT_BLOB
+
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/samsung/espresso10
 TARGET_KERNEL_CONFIG := cyanogenmod_p5110_defconfig
