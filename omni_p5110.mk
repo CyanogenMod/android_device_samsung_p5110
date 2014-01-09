@@ -1,4 +1,5 @@
 #
+# Copyright (C) 2013 OmniROM Project
 # Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,25 +15,18 @@
 # limitations under the License.
 #
 
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
-
 # Release name
 PRODUCT_RELEASE_NAME := p5110
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 1280
-
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+# Inherit some common Omni stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/p5110/full_p5110.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := p5110
-PRODUCT_NAME := cm_p5110
+PRODUCT_NAME := omni_p5110
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-P5110
 PRODUCT_MANUFACTURER := samsung
