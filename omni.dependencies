@@ -1,7 +1,7 @@
 [
   {
-    "remote": "github",
-    "repository": "andi34/android_device_samsung_p5100",
+    "remote": "omnirom",
+    "repository": "android_device_samsung_p5100",
     "target_path": "device/samsung/p5100",
     "revision": "android-4.4"
   },
@@ -18,10 +18,10 @@
     "revision": "android-4.4"
   },
   {
-    "remote": "github",
-    "repository": "andi34/android_kernel_samsung_espresso10",
+    "remote": "omnirom",
+    "repository": "android_kernel_samsung_espresso10",
     "target_path": "kernel/samsung/espresso10",
-    "revision": "cm-11.0-nooc"
+    "revision": "android-4.4"
   },
   {
     "remote": "omnirom",
