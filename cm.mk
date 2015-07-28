@@ -21,6 +21,9 @@ PRODUCT_RELEASE_NAME := p5110
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 1280
 
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.carrier=wifi-only
+
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
