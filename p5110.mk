@@ -32,8 +32,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml
 
-PRODUCT_PROPERTY_OVERRIDES := \
-    ro.carrier=wifi-only
-
 # Use the non-open-source parts
 $(call inherit-product, vendor/samsung/p51xx/p5110-vendor.mk)
