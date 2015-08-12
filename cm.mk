@@ -28,7 +28,7 @@ $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 $(call inherit-product, device/samsung/p5110/full_p5110.mk)
 
 # CyanogenMod specific overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/p5100/overlay/cm-common
+DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/cm-common
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := p5110
