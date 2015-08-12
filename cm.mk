@@ -32,7 +32,7 @@ $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 $(call inherit-product, device/samsung/p5110/full_p5110.mk)
 
 # CyanogenMod specific overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/p5100/overlay/cm-common
+DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/cm-common
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := p5110
@@ -47,3 +47,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=espresso10wifi \
     BUILD_FINGERPRINT="samsung/espresso10wifixx/espresso10wifi:4.2.2/JDQ39/P5110XXDML1:user/release-keys" \
     PRIVATE_BUILD_DESC="espresso10wifixx-user 4.2.2 JDQ39 P5110XXDML1 release-keys"
+
