@@ -32,5 +32,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml
 
-# Use the non-open-source parts
-$(call inherit-product, vendor/samsung/p51xx/p5110-vendor.mk)
+# Use the non-open-source parts, if they're present
+$(call inherit-product-if-exists, vendor/samsung/p51xx/p5110-vendor.mk)
