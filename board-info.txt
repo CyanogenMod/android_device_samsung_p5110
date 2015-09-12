@@ -1,3 +1,2 @@
 require board=espresso10
 require version-bootloader=P5110XWALE2
-require version-baseband=P5110XWALE2
