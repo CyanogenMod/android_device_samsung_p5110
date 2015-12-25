@@ -28,8 +28,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/p5110/device.mk)
 
 # OmniRom specific overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/p5100/overlay/custom-common
 DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/custom-common
+DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/custom-p51xx
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_MODEL := GT-P5110
