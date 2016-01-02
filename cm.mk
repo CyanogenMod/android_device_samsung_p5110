@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,29 +22,19 @@ PRODUCT_RELEASE_NAME := p5110
 TARGET_SCREEN_HEIGHT := 480
 TARGET_SCREEN_WIDTH := 1280
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carrier=wifi-only
-
-# Inherit some common CM stuff.
+# Inherit common CM configuration
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
-
-# Inherit device configuration
-$(call inherit-product, device/samsung/p5110/full_p5110.mk)
 
 # CyanogenMod specific overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/cm-common
 
-## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := p5110
-PRODUCT_NAME := cm_p5110
-PRODUCT_BRAND := samsung
-PRODUCT_MODEL := GT-P5110
-PRODUCT_MANUFACTURER := samsung
+# Inherit device configuration
+$(call inherit-product, device/samsung/p5110/aosp_p5110.mk)
 
-#Set build fingerprint / ID / Prduct Name ect.
+# Device identifier. This must come after all inclusions
+PRODUCT_NAME := cm_p5110
+
+# Set build fingerprint / ID / Product Name etc.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=espresso10wifixx \
-    TARGET_DEVICE=espresso10wifi \
     BUILD_FINGERPRINT="samsung/espresso10wifixx/espresso10wifi:4.2.2/JDQ39/P5110XXDML1:user/release-keys" \
     PRIVATE_BUILD_DESC="espresso10wifixx-user 4.2.2 JDQ39 P5110XXDML1 release-keys"
-
