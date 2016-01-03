@@ -15,4 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_p5110.mk
+    $(LOCAL_DIR)/aosp_p5110.mk \
+    $(LOCAL_DIR)/cm.mk
