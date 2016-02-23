@@ -21,6 +21,3 @@ TARGET_BOARD_INFO_FILE := device/samsung/p5110/board-info.txt
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := espresso,p5110,GT-P5110,p5113,GT-P5113,espresso10wifi,espresso10wifixx
-
-# Use the non-open-source parts, if they're present
--include vendor/samsung/p51xx/BoardConfigVendor.mk
