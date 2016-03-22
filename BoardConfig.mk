@@ -24,7 +24,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/espresso10
 TARGET_KERNEL_CONFIG := cyanogenmod_p5110_defconfig
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := espresso,p5110,GT-P5110,p5113,GT-P5113,espresso10wifi,espresso10wifixx
+TARGET_OTA_ASSERT_DEVICE := espresso-common,p5110,GT-P5110,p5113,GT-P5113,espresso10wifi,espresso10wifixx
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/p51xx/BoardConfigVendor.mk
