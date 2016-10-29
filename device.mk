@@ -15,7 +15,7 @@
 #
 
 # Include espresso-common makefile
-$(call inherit-product, device/samsung/espresso-common/espresso-common.mk)
+$(call inherit-product, device/samsung/espresso-common/device-common.mk)
 
 LOCAL_PATH := device/samsung/p5110
 
