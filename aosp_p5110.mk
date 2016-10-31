@@ -14,14 +14,11 @@
 # limitations under the License.
 #
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carrier=wifi-only
+# Inherit device configuration
+$(call inherit-product, device/samsung/p5110/device.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
-
-# Inherit device configuration
-$(call inherit-product, device/samsung/p5110/device.mk)
 
 PRODUCT_NAME := aosp_p5110
 PRODUCT_DEVICE := p5110
