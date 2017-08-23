@@ -4,18 +4,6 @@
     "repository": "android_device_samsung_espresso-common",
     "target_path": "device/samsung/espresso-common",
     "revision": "android-4.4"
-  },
-  {
-    "remote": "omnirom",
-    "repository": "android_hardware_ti_omap4",
-    "target_path": "hardware/ti/omap4",
-    "revision": "android-4.4"
-  },
-  {
-    "remote": "omnirom",
-    "repository": "android_kernel_samsung_espresso10",
-    "target_path": "kernel/samsung/espresso10",
-    "revision": "android-4.4"
   }
 ]
 
