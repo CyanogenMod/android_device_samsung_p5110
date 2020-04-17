@@ -1,0 +1,9 @@
+[
+  {
+    "remote": "omnirom",
+    "repository": "android_device_samsung_espresso-common",
+    "target_path": "device/samsung/espresso-common",
+    "revision": "android-4.4"
+  }
+]
+

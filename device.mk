@@ -1,4 +1,5 @@
 #
+# Copyright (C) 2013 OmniROM Project
 # Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,20 +15,24 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/samsung/p5100/p51xx-common.mk)
+# Include espresso-common makefile
+$(call inherit-product, device/samsung/espresso-common/device-common.mk)
 
 LOCAL_PATH := device/samsung/p5110
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carrier=wifi-only
 
-# Audio
+# Include wifi-only overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay/aosp
+
+# Audio Config
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/tiny_hw.xml:system/etc/sound/espresso10wifi \
     $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
 
-# IRDA
+# IR packages
 PRODUCT_PACKAGES += \
-    irda.piranha
+    consumerir.piranha
 
-# Use the non-open-source parts, if they're present
-$(call inherit-product-if-exists, vendor/samsung/p51xx/p5110-vendor.mk)
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml

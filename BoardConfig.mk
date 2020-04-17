@@ -1,4 +1,5 @@
 #
+# Copyright (C) 2013 OmniROM Project
 # Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,14 +15,10 @@
 # limitations under the License.
 #
 
-# Include p51xx BoardConfigCommon
--include device/samsung/p5100/BoardConfigCommon.mk
+# Include common espresso BoardConfig
+-include device/samsung/espresso-common/BoardConfigCommon.mk
 
 TARGET_BOARD_INFO_FILE := device/samsung/p5110/board-info.txt
 
-# Inline kernel building
-TARGET_KERNEL_SOURCE := kernel/samsung/espresso10
-TARGET_KERNEL_CONFIG := cyanogenmod_p5110_defconfig
-
 # assert
-TARGET_OTA_ASSERT_DEVICE := p5110,GT-P5110,p5113,GT-P5113,espresso10wifi,espresso10wifixx
+TARGET_OTA_ASSERT_DEVICE := espressowifi,espresso-common,p5110,GT-P5110,p5113,GT-P5113,espresso10wifi,espresso10wifixx

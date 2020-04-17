@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2014 OmniROM Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,4 +16,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_p5110.mk
+    $(LOCAL_DIR)/aosp_p5110.mk \
+    $(LOCAL_DIR)/omni_p5110.mk
